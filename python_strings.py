@@ -8,7 +8,10 @@
 #       -set this equal to your birth year (doesn't have to be real should be less then 100 yrs ago)
 #   - current_year
 #       -set this equal to 2020
-
+my_first_name = "ThanhTuan" #Python var assigmanet does not require a kybords
+my_last_name = "Truong"
+my_year_of_birth = 1999 
+current_year = 2020
 
 
 
@@ -20,7 +23,12 @@
 #       - second letter of your last name (use the -index)
 #       - first two letter of your first name (use the +index)
 #       - second two letter of your last name (use the -index)
-
+print (my_first_name)
+print (my_last_name)
+print (my_first_name[0])
+print (my_last_name[-1])
+print (my_first_name[:2])
+print (my_last_name[-2:])
 
 
 
@@ -28,7 +36,9 @@
 #   - Print the following items (one per line) (print using variables)
 #       -first name and last name combined
 #       -first name six times
-
+print (my_first_name + my_last_name)
+print (my_first_name*6)
+print (my_first_name, my_last_name)
 
 
 
@@ -38,6 +48,10 @@
 #       - first name last name -was born in- year of birth
 #       - first name last name -was born in- year of birth. first name -enjoyed celebrating- current year
 
+txt = my_last_name + my_first_name + "was born in {}"
+print (txt.format(my_year_of_birth))
+txt2 = my_last_name + my_first_name +'was born in {}.{}enjoyed celerating {}'
+print (txt2.format(my_year_of_birth,my_first_name ,current_year))
 
 
 # TODO Escape characters
