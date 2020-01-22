@@ -50,18 +50,22 @@ print (my_first_name, my_last_name)
 
 txt = my_last_name + my_first_name + "was born in {}"
 print (txt.format(my_year_of_birth))
-txt2 = my_last_name + my_first_name +'was born in {}.{}enjoyed celerating {}'
-print (txt2.format(my_year_of_birth,my_first_name ,current_year))
+txt1 = my_last_name + my_first_name +'was born in {}.{}enjoyed celerating {}'
+print (txt1.format(my_year_of_birth,my_first_name ,current_year))
 
 
 # TODO Escape characters
 #   - Print the following items (one per line) (print using variables)
 #       - possesive first name -birth year is- year of birth 
 #       - tab last name current year
-
+txt2 = '{} birth year is {}'
+print (txt2.format(my_first_name, my_year_of_birth))
 
 # TODO String methods
 #   - Print the following items (one per line) (print using variables)
 #       - first name and last name in lower case
 #       - length of last name
 #       - first name and last name all in upper case
+print (my_first_name.lower())
+print (len(my_last_name))
+print (my_first_name.upper())
