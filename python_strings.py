@@ -66,6 +66,9 @@ print (txt2.format(my_first_name, my_year_of_birth))
 #       - first name and last name in lower case
 #       - length of last name
 #       - first name and last name all in upper case
-print (my_first_name.lower())
+print (my_first_name.casefold(), my_last_name.casefold())
+print (my_first_name.capitalize(), my_last_name.capitalize())
+print (my_first_name.count('T'))
+print (my_first_name.lower() + my_last_name.lower())
 print (len(my_last_name))
-print (my_first_name.upper())
+print (my_first_name.upper() + my_last_name.upper())
